@@ -1,13 +1,5 @@
-import loadable from '@loadable/component';
-import { Input } from './Input';
+import { Pages } from '../pages';
 
-const LazyTest = loadable(() => import('./Test'));
-
-export const App = () => (
-  <div>
-    <Input/>
-    {false && (
-      <LazyTest/>
-    )}
-  </div>
+export const Application = () => (
+  <Pages />
 )

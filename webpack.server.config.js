@@ -15,7 +15,7 @@ const config = {
   entry: [
     sharedConfig.mode !== "production" && 'webpack/hot/poll?100',
     'source-map-support/register',
-    path.resolve(__dirname, "src/server/index.tsx"),
+    path.resolve(__dirname, "src/server.tsx"),
   ].filter(Boolean),
   output: {
     clean: true,

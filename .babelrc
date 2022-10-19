@@ -12,10 +12,18 @@
         "runtime": "automatic",
       }
     ],
-    "@babel/preset-typescript"
+    "@babel/preset-typescript",
+    "atomic-router/babel-preset"
   ],
   "plugins": [
-    "@loadable/babel-plugin"
+    "@loadable/babel-plugin",
+    [
+      "effector/babel-plugin",
+      {
+        "addLoc": true,
+        "reactSsr": true
+      }
+    ]
   ],
   "ignore": [
     "node_modules",
