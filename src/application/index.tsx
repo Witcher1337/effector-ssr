@@ -1,5 +1,5 @@
 import loadable from '@loadable/component';
-import { Input } from '../Input';
+import { Input } from './Input';
 
 const LazyTest = loadable(() => import('./Test'));
 
