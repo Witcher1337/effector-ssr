@@ -39,11 +39,6 @@ app
       params: history,
     });
 
-    await allSettled(router.setHistory, {
-      scope,
-      params: history,
-    });
-
     const application = (
       <Provider value={scope}>
         <RouterProvider router={router}>
@@ -70,7 +65,7 @@ app
                   <script>
                     window.INITIAL_STATE = ${JSON.stringify(initialState)}
                   </script>
-                  
+
                   <div id='root'>${html}</div>
               </body>
           </html>
