@@ -4,7 +4,7 @@ type Props = PropsWithChildren<{
   header: JSX.Element
 }>
 
-export const PrimaryTemplate:FunctionComponent<Props> = ({ header, children}) => (
+export const BaseTemplate:FunctionComponent<Props> = ({ header, children}) => (
   <>
     {header}
 

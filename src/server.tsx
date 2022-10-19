@@ -67,10 +67,11 @@ app
                   ${styleTags}
               </head>
               <body>
-                  <div id='root'>${html}</div>
                   <script>
                     window.INITIAL_STATE = ${JSON.stringify(initialState)}
                   </script>
+                  
+                  <div id='root'>${html}</div>
               </body>
           </html>
       `);

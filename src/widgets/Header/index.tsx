@@ -18,7 +18,7 @@ export const PrimaryHeader = () => (
     <nav>
       <ul>
         {navigation.map(({ route, name}) => (
-          <li>
+          <li key={name}>
             <Link to={route}>{name}</Link>
           </li>
         ))}
