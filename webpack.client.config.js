@@ -7,10 +7,6 @@ const sharedConfig = require('./webpack.shared.config');
 const config = {
   name: "client",
   entry: path.resolve(__dirname, "src/client.tsx"),
-  devServer: {
-    open: false,
-    host: "localhost",
-  },
   plugins: [],
   output: {
     clean: true,

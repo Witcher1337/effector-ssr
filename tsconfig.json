@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
@@ -13,7 +12,7 @@
     ],
   },
   "include": [
-    "./src"
+    "./src",
   ],
   "exclude": [
     "node_modules",

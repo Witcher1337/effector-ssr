@@ -7,10 +7,6 @@ const { RunScriptWebpackPlugin } = require("run-script-webpack-plugin");
 const config = {
   name: "server",
   target: "node",
-  devServer: {
-    open: true,
-    host: "localhost",
-  },
   devtool: 'cheap-module-source-map',
   entry: [
     sharedConfig.mode !== "production" && 'webpack/hot/poll?100',
