@@ -12,11 +12,7 @@ const config = {
     open: false,
     host: "localhost",
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-    }),
-  ],
+  plugins: [],
   output: {
     clean: true,
     path: path.resolve(__dirname, "dist/client"),
